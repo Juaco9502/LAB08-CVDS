@@ -8,9 +8,10 @@ package edu.eci.cvds.sampleprj.dao.mybatis.mappers;
 import edu.eci.cvds.samples.entities.TipoItem;
 import java.util.Date;
 import java.util.List;
+
 /**
  *
- * @author juaco
+ * @author 2120046
  */
 public interface ItemRentadoMapper {
     public List<TipoItem> getItemsRentados();
