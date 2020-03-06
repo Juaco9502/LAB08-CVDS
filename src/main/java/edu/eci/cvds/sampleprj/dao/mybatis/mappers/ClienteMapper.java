@@ -23,9 +23,9 @@ public interface ClienteMapper {
      * @param fechafin 
      */
     public void agregarItemRentadoACliente(int id, 
-            int idit, 
-            Date fechainicio,
-            Date fechafin);
+            @Param("idit")int idit, 
+            @Param("fechai") Date fechainicio,
+            @Param("fechaf") Date fechafin);
 
     /**
      * Consultar todos los clientes
