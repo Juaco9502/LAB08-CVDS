@@ -58,11 +58,6 @@
         left join VI_TIPOITEM as ti on i.TIPOITEM_id=ti.id
     </select> 
 
-    <insert parameterType="map" id="agregarItemRentadoACliente">
-        insert into VI_ITEMRENTADO(CLIENTES_documento,ITEMS_id,fechainiciorenta,fechafinrenta)
-        values (#{idcli},#{iditem},#{fechainicial},#{fechafinal})
-        
-    </insert>
     
     <resultMap type='Cliente' id='ClienteResult'>
         <id property='documento' column='documento'/>
@@ -74,8 +69,14 @@
         <collection property='rentados' ofType='ItemRentado' resultMap="ClienteResult" columnPrefix="item_"></collection>
     </resultMap>
     
+    <insert parameterType="ItemRentado" id="agregarItemRentadoACliente">
+        insert into VI_ITEMRENTADO(CLIENTES_documento,ITEMS_id,fechainiciorenta,fechafinrenta)
+        values (#{idcli},#{idit},#{fechai},#{fechaf})
+        
+    </insert>
+    
     <resultMap type='ItemRentado' id="ItemRentadoResult">            
-	<association property='rentados' resultMap='edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper.ItemResult'></association> 
+        <association property='rentados' resultMap='edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper.ItemResult'></association> 
     </resultMap>
 
           	
