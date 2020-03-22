@@ -8,6 +8,7 @@ package edu.eci.cvds.samples.entities;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Cliente implements Serializable{
     
@@ -20,6 +21,7 @@ public class Cliente implements Serializable{
     private ArrayList<ItemRentado> rentados; 
 
     public Cliente() {
+        
     }
 
     public Cliente(String nombre, long documento, String telefono, String direccion, String email, boolean vetado, ArrayList<ItemRentado> rentados) {   
@@ -104,7 +106,6 @@ public class Cliente implements Serializable{
     public String toString() {
         return "Cliente{" + "nombre=" + nombre + ", documento=" + documento + ", rentados=\n\t" + rentados + '}';
     }
-
    
     
     
