@@ -14,7 +14,7 @@ import java.util.*;
 
 /**
  *
- * @author 2105516
+ * @author 2105057
  */
 public class MyBATISTipoItemDAO implements TipoItemDAO {
 

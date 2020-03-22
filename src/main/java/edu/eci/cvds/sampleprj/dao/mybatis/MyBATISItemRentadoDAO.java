@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author 2120046
+ * @author 2105516
  */
 public class MyBATISItemRentadoDAO implements ItemRentadoDAO {
 

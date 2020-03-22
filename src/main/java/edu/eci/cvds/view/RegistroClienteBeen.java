@@ -17,7 +17,7 @@ import java.sql.Date;
 @ManagedBean(name = "AlquilerItemsBean")
 @SessionScoped
 
-public class RegistroClienteBean extends BasePageBean {
+public class RegistroClienteBeen extends BasePageBean {
 
     @Inject
     private ServiciosAlquiler serviciosAlquiler;
