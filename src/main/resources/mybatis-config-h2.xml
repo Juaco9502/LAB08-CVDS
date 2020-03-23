@@ -30,4 +30,4 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
        <mapper resource="mappers/TipoItemMapper.xml"></mapper>
    </mappers> 
 
-</configuration>
+</configuration> 
